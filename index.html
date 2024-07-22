@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+      .overlay-text {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+      .image-container:hover .overlay-text {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="px-10 py-4 bg-gray-100 text-teal-500 font-bold font-mono text-xl"
+      >
+        <ul class="flex space-x-10">
+          <li class="cursor-pointer">
+            <a href="#"> About </a>
+          </li>
+          <li class="mx-2 cursor-pointer">
+            <a href="#"> Work </a>
+          </li>
+          <li class="mx-2 cursor-pointer">
+            <a href="#"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="hr bg-teal-500 h-0.5"></div>
+    </header>
+    <main class="items-center w-screen">
+      <div
+        class="flex justify-center items-center bg-gray-200 relative image-container"
+      >
+        <img
+          src="assets/headerImage.jpeg"
+          alt="Header Image"
+          class="object-cover w-full h-screen block"
+        />
+        <div
+          class="text-sm absolute bottom-10 left-1/2 transform -translate-x-1/2 w-full text-center bg-black bg-opacity-50 text-white py-2 overlay-text font-mono sm:text-base md:text-lg lg:text-xl xl:text-2xl"
+        >
+          Hey, I'm Aditi Aggarwal
+        </div>
+      </div>
+      <div class="hr bg-teal-500 h-1"></div>
+
+      <div class="py-20 flex justify-center items-center flex-col space-y-10">
+        <img src="assets/aditi5.jpeg" alt="" class="w-1/5 rounded-full" />
+
+        <div class="text-teal-500 text-xl font-mono font-semibold text-center">
+          I am a full-stack web developer based in Melbourne, Australia.
+        </div>
+
+        <div class="hr bg-teal-500 h-1 w-60"></div>
+
+        <div class="text-teal-500 text-3xl font-mono text-center font-semibold">
+          Here's what I've done so far
+        </div>
+
+        <div
+          class="flex space-x-10 items-center justify-center text-teal-500 py-10"
+        >
+          <img src="assets/project2.jpg" alt="" class="w-1/4 rounded-3xl" />
+          <p>The description of project 1</p>
+        </div>
+
+        <div
+          class="flex space-x-10 items-center justify-center text-teal-500 pb-10"
+        >
+          <img src="assets/project3.jpg" alt="" class="w-1/4 rounded-3xl" />
+          <p>The description of project 2</p>
+        </div>
+
+        <div class="my-96 hr bg-teal-500 h-1 w-60"></div>
+
+        <div class="flex flex-col items-center justify-center">
+          <p
+            class="text-teal-500 text-3xl font-mono text-center font-semibold pb-10"
+          >
+            My Photos
+          </p>
+
+          <div
+            class="block items-center justify-center space-y-1 xl:flex xl:space-y-0 xl:space-x-1"
+          >
+            <div class="block space-y-1 md:space-y-0 md:flex md:space-x-1">
+              <img src="assets/aditi.jpeg" alt="" class="h-72 w-72" />
+              <img src="assets/aditi2.jpeg" alt="" class="h-72 w-72" />
+            </div>
+            <div class="block space-y-1 md:space-y-0 md:flex md:space-x-1">
+              <img src="assets/aditi3.jpeg" alt="" class="h-72" />
+              <img src="assets/aditi4.jpeg" alt="" class="h-72 w-72" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
